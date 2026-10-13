@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Assistant AI</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Study Assistant AI</h1>
+
+        <p>
+            Ask questions using different prompt engineering techniques.
+        </p>
+
+        <label for="question">
+            Enter your question
+        </label>
+
+        <textarea
+            id="question"
+            placeholder="Example: Explain normalization in DBMS">
+        </textarea>
+
+
+        <label for="promptType">
+            Choose Prompting Technique
+        </label>
+
+        <select id="promptType">
+
+            <option value="zero-shot">
+                Zero-shot Prompting
+            </option>
+
+            <option value="few-shot">
+                Few-shot Prompting
+            </option>
+
+            <option value="role">
+                Role Prompting
+            </option>
+
+        </select>
+
+
+        <button onclick="askQuestion()">
+            Ask Study Assistant
+        </button>
+
+
+        <div class="result">
+
+            <h2>Answer</h2>
+
+            <p id="answer">
+                Your answer will appear here.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
